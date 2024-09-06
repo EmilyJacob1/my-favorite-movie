@@ -31,10 +31,7 @@ body, html {
 }
 
 .container {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5% 15%;
 }
 
 .axiom-container {
@@ -70,7 +67,7 @@ body, html {
   height: auto;
 }
 
-/* images */
+/*background images */
 .bgimg-1, .bgimg-2 {
   background-attachment: fixed;
   background-position: center;
@@ -88,6 +85,8 @@ body, html {
   min-height: 400px;
 }
 
+
+/*gallery*/
 
 
 /* mobile/tablet */
