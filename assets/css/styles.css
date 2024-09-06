@@ -1,0 +1,107 @@
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee244e;
+  border-radius: 10px;
+}
+
+/*main*/
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #dfd9f5;
+  line-height: 1.8;
+  margin: 0;
+  background-color: #060719;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.axiom-container {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000069;
+  justify-content: center;
+}
+
+.footer {
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+/*logo*/
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+.logo-image {
+  width: 40rem;
+  height: auto;
+}
+
+/* images */
+.bgimg-1, .bgimg-2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('/assets/images/main-backgr.jpg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("/assets/images/axiom.jpg");
+  min-height: 400px;
+}
+
+
+
+/* mobile/tablet */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 100%;
+  }
+
+  .logo-image {
+    width: 75%;
+  }
+
+  .container {
+    margin: 1rem 5rem 1rem;
+  }
+}
