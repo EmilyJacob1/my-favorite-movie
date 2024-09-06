@@ -17,8 +17,24 @@
 }
 
 /*main*/
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
+body,
+p
+ {
+  font-family: 'Courier New', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
+}
+
+
+body,
+html {
   height: 100%;
   color: #dfd9f5;
   line-height: 1.8;
@@ -37,6 +53,7 @@ body, html {
 .axiom-container {
   padding-left: 15%;
   padding-right: 15%;
+  padding-bottom: 5%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -68,7 +85,8 @@ body, html {
 }
 
 /*background images */
-.bgimg-1, .bgimg-2 {
+.bgimg-1,
+.bgimg-2 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,20 +105,36 @@ body, html {
 
 
 /*gallery*/
+.gallery-container {
+  padding: 5% 8%;
+}
+
+.gallery-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 10px;
+  padding: 0 4px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Optional: to add some round corners */
+}
 
 
 /* mobile/tablet */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 100%;
+  .axiom-container {
+    height: unset;
   }
 
+}
+
+@media only screen and (max-device-width: 1600px) {
   .logo-image {
     width: 75%;
-  }
-
-  .container {
-    margin: 1rem 5rem 1rem;
   }
 }
