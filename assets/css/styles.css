@@ -131,10 +131,13 @@ html {
     height: unset;
   }
 
-}
-
-@media only screen and (max-device-width: 1600px) {
   .logo-image {
     width: 75%;
   }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  }
+  
 }
+
