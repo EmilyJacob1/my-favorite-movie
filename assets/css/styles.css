@@ -32,6 +32,13 @@ h6 {
   font-family: Arial, sans-serif;
 }
 
+.mt {
+  margin-top: 5.5rem;
+}
+
+.mb {
+  margin-bottom: 5.5rem;
+}
 
 body,
 html {
@@ -46,10 +53,17 @@ html {
   text-align: center;
 }
 
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   padding: 5% 15%;
 }
 
+/**/
 .axiom-container {
   padding-left: 15%;
   padding-right: 15%;
@@ -64,6 +78,49 @@ html {
 .footer {
   padding-bottom: 2rem;
   padding-top: 1rem;
+}
+
+/* #morePlot {
+  display: none;
+} */
+#morePlot {
+  display: none; /* Hidden by default */
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Transition opacity for fade effect */
+}
+
+#morePlot.show {
+  display: inline; /* Show when the class is added */
+  opacity: 1; /* Fully visible */
+}
+
+/*buttons*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-light-outline {
+  color: #f8f9fa;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f8f9fa;
+}
+
+.btn-light-outline:hover {
+  color: rgb(21, 21, 21);
+  background-color: rgba(255, 255, 255, 0.856);
+  background-image: none;
+  border-color: transparent;
 }
 
 /*logo*/
@@ -125,7 +182,7 @@ html {
 }
 
 
-/* mobile/tablet */
+/* tablet/mobile */
 @media only screen and (max-width: 1600px) {
   .axiom-container {
     height: unset;
