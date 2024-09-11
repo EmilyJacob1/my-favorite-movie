@@ -151,12 +151,12 @@ html {
 }
 
 .bgimg-1 {
-  background-image: url('../assets/images/main-backgr.jpg');
+  background-image: url('../images/main-backgr.jpg');
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("../assets/images/axiom.jpg");
+  background-image: url("../images/axiom.jpg");
   min-height: 400px;
 }
 
