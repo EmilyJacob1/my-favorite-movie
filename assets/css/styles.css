@@ -137,7 +137,7 @@ html {
 }
 
 .logo-image {
-  width: 40rem;
+  width: 35rem;
   height: auto;
 }
 
@@ -183,7 +183,7 @@ html {
 
 
 /* tablet/mobile */
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   .axiom-container {
     height: unset;
   }
